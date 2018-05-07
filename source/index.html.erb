@@ -1,15 +1,40 @@
 ---
 title: Le Wagon - Middleman
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Middleman LeWagon Exercise</title>
+</head>
+<body>
+  <%= partial "layouts/banner.html" %>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <div class="container text-center">
+    <div class="header">
+      <h4><strong>Recent Flats</strong></h4>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <%= partial "layouts/cards.html" %>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <%= partial "layouts/cards.html" %>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <%= partial "layouts/cards.html" %>
+      </div>
+    </div>
   </div>
-</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

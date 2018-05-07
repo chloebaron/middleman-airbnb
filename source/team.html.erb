@@ -1,0 +1,17 @@
+---
+title: Le Wagon - Middleman -Team Page
+---
+
+<div id="team-page" style= "margin-top: 15%" class="text-center">
+  <div class="team-page-content">
+    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline text-center">
+      <% ["chloebaron", "Zeraaiur"].each do |gh_username| %>
+        <li>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle", style: "width: 150px" %>
+          <h3><%= gh_username.capitalize %></h3>
+        </li>
+      <% end %>
+  </ul>
+  </div>
+</div>
